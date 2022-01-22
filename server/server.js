@@ -8,9 +8,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 
-const url = process.env.MONGODB_URI || 'mongodb+srv://alvaroGoldsack:xRcDBsLUha6H2pE@cluster0.ypstc.mongodb.net/test'
+const url = process.env.MONGODB_URI
 const CURRENT_WORKING_DIR = process.cwd();
-let port = process.env.DB_PORT || 3000; 
+let port = process.env.DB_PORT 
 
 
 devBundle.compile(app); //calls the compile method from devBundle.js
